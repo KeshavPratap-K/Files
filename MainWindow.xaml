@@ -4,7 +4,7 @@
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
                  Title="Files"
-                 WindowStartupLocation="CenterScreen" FontFamily="Calibri" SizeToContent="WidthAndHeight" ResizeMode="NoResize" FontSize="14">
+                 WindowStartupLocation="CenterScreen" FontFamily="Calibri" SizeToContent="WidthAndHeight" FontSize="14" Icon="assets/icon.png" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
 
     <Grid Margin="80">
         <Grid.RowDefinitions>
@@ -34,7 +34,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="2" Margin="0,25,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="createBtn" Margin="0,0,0,0" Width="100" Height="30" Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="createBtn_Click">Create</Button>
+            <Button x:Name="createBtn" Width="100" Height="30" Style="{StaticResource MahApps.Styles.Button.Square.Accent}" Click="createBtn_Click">Create</Button>
             <Button x:Name="cancelBtn" Margin="15,0,0,0" Width="100" Height="30" Style="{DynamicResource MahApps.Styles.Button.Square}" Click="cancelBtn_Click">Cancel</Button>
         </StackPanel>
     </Grid>
